@@ -1,4 +1,3 @@
-
 # React To-Do List
 
 This is a simple and clean To-Do List application built with React, using Context API for state management and Tailwind CSS for styling. You can add, remove, check/uncheck, and edit tasks. All tasks are saved in the local storage.
