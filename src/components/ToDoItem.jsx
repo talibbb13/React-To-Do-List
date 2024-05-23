@@ -7,7 +7,7 @@ function ToDoItem({ todo }) {
 
   const { editToDo, toDoComplete, toDoDel } = useToDoContext();
 
-  const edit = (id) => {
+  const edit = () => {
     editToDo(todo.id, { ...todo, todo: updatedToDoMsg });
     setIsToDoEditable(false);
   };

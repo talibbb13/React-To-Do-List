@@ -7,7 +7,6 @@ function App() {
   const [allToDo, setAllToDo] = useState([]);
 
   const addToDo = (toDo) => {
-    // id only and str only?
     setAllToDo((prev) => [
       { id: Date.now(), ...toDo, completed: false },
       ...prev,
@@ -15,7 +14,6 @@ function App() {
   };
 
   const editToDo = (id, toDo) => {
-    // toDo param contains str only?
     setAllToDo((prev) =>
       prev.map((toDoItem) => (toDoItem.id === id ? toDo : toDoItem))
     );
